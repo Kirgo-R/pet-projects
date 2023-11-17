@@ -1,0 +1,39 @@
+.place {
+  display: grid;
+  grid-template-areas: 
+  "title website"
+  "image paragraphs";
+  grid-template-columns: 460px 1fr;
+  gap: 48px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    gap: 48px 32px;
+    grid-template-columns: 440px 1fr;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .place {
+    grid-template-columns: 340px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    gap: 44px 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .place {
+    grid-template-areas: 
+    "title"
+    "website"
+    "image"
+    "paragraphs";
+    grid-template-columns: 100%;
+    gap: 32px;
+  }
+}

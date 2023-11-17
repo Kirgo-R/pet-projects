@@ -1,0 +1,25 @@
+.header {
+  padding: 18px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--propmo-bg-color);
+}
+
+.header_light {
+  background: var(--main-bg-color);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 18px 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 18px 14px;
+  }
+}
+
+

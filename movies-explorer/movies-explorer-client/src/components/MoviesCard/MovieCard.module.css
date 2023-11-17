@@ -1,0 +1,82 @@
+@import "../../vendor/index.css";
+
+@keyframes Rendering {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.wrapper {
+  width: 100%;
+  animation: Rendering 0.85s linear;
+
+}
+
+.poster {
+  width: 100%;
+  height: 151px;
+  object-fit: cover;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 20px;
+  border-bottom: 1px #E8E8E8 solid;
+  align-items: center;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  height: 20px;
+}
+
+.saved {
+  background: url("../../images/save-movie.svg");
+  width: 24px;
+  height: 24px;
+  transition: background 0.3s linear;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.saved:hover {
+  opacity: .8;
+}
+
+.deleteButton {
+  background: url("../../images/del-button.svg");
+}
+
+.unsaved {
+  background: url("../../images/unsave-movie.svg");
+}
+
+.duration {
+  color: #A0A0A0;
+  font-size: 11px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .poster {
+    height: 190px;
+  }
+}
+
+@media (max-width: 425px) {
+  .poster {
+    height: 168px;
+  }
+
+  .title {
+    font-size: 12px;
+  }
+
+  .duration {
+    font-size: 10px;
+  }
+}
+
+

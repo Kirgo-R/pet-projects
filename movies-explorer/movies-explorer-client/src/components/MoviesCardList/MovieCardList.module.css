@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 70px 0 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  gap: 38px 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 70px 0 60px;
+    grid-template-columns: repeat(auto-fit, 339px);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 40px 0 55px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 34px;
+  }
+}

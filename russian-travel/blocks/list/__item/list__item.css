@@ -1,0 +1,5 @@
+.list__item {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: calc(18/12);
+}

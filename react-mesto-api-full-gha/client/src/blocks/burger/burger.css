@@ -1,0 +1,52 @@
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 21px;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 3px;
+        box-sizing: border-box;
+        transition: opacity 0.3s linear;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .burger:hover {
+        opacity: 0.6;
+    }
+
+    .burger span,
+    .burger::before,
+    .burger::after {
+        transition: all 0.3s ease 0s;
+        height: 3px;
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        position: absolute;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+    }
+
+    .burger::before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+
+    .burger span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+}

@@ -1,0 +1,51 @@
+.auth {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.signup {
+  color: var(--link-light-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  transition: opacity .3s linear;
+}
+
+.signup:hover {
+  opacity: .7;
+}
+
+.signin {
+  width: 76px;
+  height: 32px;
+  color: var(--link-dark-color);
+  background: var(--main-color);
+  padding: 8px 20px;
+  border-radius: 3px;
+  transition: opacity .3s linear;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.signin:hover {
+  opacity: .8;
+}
+
+@media (max-width: 426px) {
+  .auth {
+    gap: 14px;
+  }
+
+  .signin {
+    width: 54px;
+    height: 26px;
+    font-size: 10px;
+    padding: 7px 12px;
+  }
+
+  .signup {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

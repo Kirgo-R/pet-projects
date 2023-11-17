@@ -1,0 +1,8 @@
+.photo-grid__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: calc(29.05/24);
+  margin: 0;
+  color: #000000;
+
+}

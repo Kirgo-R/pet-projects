@@ -1,0 +1,33 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "Одностраничный сайт, адаптирован как под десктопные версии экранов, так и под мобильные. При создании были использованы: HTML, CSS, JavaScript.\r Адаптивность реализована с помощью grid, flex, \"резиновой\" вёрстки.\r При помощи JS реализованы такие функции как: форма для изменения информации о профиле, создание новых карточек с фото, открытие фото в модальном окне.\r Организация файловой структуры проведена по принципам БЭМ.\r С помощью JS реализована валидация форм.\r Реализованое закрытие модальных окон по нажатию клавиши Escape и при клике на overlay.\r Для реализации кода в парадигме ООП созданы классы валидации форм, карточек с фото.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.4",
+    "cssnano": "^6.0.1",
+    "gh-pages": "^5.0.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.1",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "core-js": "^3.30.2"
+  }
+}

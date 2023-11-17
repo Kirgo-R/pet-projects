@@ -1,0 +1,146 @@
+.wrapper {
+  padding: 112px 70px 125px;
+  background: var(--main-bg-color);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  padding: 0 0 23px;
+}
+
+.about {
+  padding: 66px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.photo {
+  width: 270px;
+  height: 327px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.profession {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 18px 0 26px;
+}
+
+.biography {
+  padding: 0 0 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.link {
+  color: var(--link-dark-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: opacity .3s linear;
+}
+
+.link:hover {
+  opacity: .7;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 95px 50px  ;
+  }
+
+  .name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+
+  .profession {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 16px 0 20px;
+  }
+
+  .biography {
+    padding: 0 0 88px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .text {
+    max-width: 364px;
+  }
+
+  .photo {
+    width: 255px;
+    height: 307px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 40px 0 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .photo {
+    width: 292px;
+    height: 352px;
+    order: -1;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 75px 14px;
+  }
+
+  .about {
+    padding: 60px 0 0;
+  }
+
+  .name {
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+  }
+
+  .profession {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 20px 0;
+  }
+
+  .biography {
+    padding: 0 0 40px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .text {
+    max-width: 292px;
+  }
+}
+
+

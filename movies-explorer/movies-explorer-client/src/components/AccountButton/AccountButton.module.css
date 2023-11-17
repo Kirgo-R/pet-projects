@@ -1,0 +1,36 @@
+
+.button {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  width: 100px;
+  height: 32px;
+  border-radius: 40px;
+  position: relative;
+  padding: 9px 0 9px 12px;
+  box-sizing: border-box;
+  background: var(--main-color);
+  color: var(--link-dark-color);
+  transition: opacity .3s linear;
+}
+
+.button:hover {
+  opacity: .8;
+}
+
+.button_light {
+  background: var(--additional-light-color);
+  box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.08);
+}
+
+.button:after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background: var(--button-light-color) url('../../images/acc-icon.svg') center no-repeat;
+  z-index: 100;
+  border-radius: 50px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}

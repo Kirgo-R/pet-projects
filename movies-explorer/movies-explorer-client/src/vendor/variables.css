@@ -1,0 +1,31 @@
+:root {
+  --main-color: #2BE080;
+  /* font */
+  --main-font: 'Inter', Arial, sans-serif;
+  --font-color: #000000;
+  --additional-font-color: #A0A0A0;
+  --light-font-color: #FFFFFF;
+  --disable-button-font-color: #C2C2C2;
+  /* bg */
+  --main-bg-color: #FFFFFF;
+  --propmo-bg-color: #073042;
+  --additional-bg-color: #F5F5F5;
+  /* buttons */
+  --button-color: #3456F3;
+  --button-inactive-color: #F8F8F8;
+  --button-light-color: #F9F9F9;
+  --popup-bg: #0000004D;
+  /* links */
+  --link-color: #3456F3;
+  --link-dark-color:  #000000;
+  --link-light-color:  #FFFFFF;
+  --link-warning-color: #FF3055;
+  /* other */
+  --error-color: #FF3055;
+  --border-color: #E8E8E8;
+  --additional-color: #FFFFFF;
+  --additional-dark-color: #000000;
+  --additional-light-color: #E8E8E8;
+  --deadline-color: #F2F2F2;
+  --checkbox-color: #EBEBEB;
+}

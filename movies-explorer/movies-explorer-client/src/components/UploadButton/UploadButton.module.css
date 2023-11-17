@@ -1,0 +1,16 @@
+.button {
+  width: 320px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: var(--button-light-color);
+  font-size: 12px;
+  font-weight: 500;
+  align-self: center;
+  transition: opacity .3s linear;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: .8;
+}

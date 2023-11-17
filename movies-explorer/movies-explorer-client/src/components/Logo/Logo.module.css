@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  width: 18px;
+  min-height: 18px;
+  border-radius: 50%;
+  border: 10px var(--main-color) solid;
+  transition: opacity .3s linear;
+}
+
+.logo:hover {
+  opacity: .8;
+}

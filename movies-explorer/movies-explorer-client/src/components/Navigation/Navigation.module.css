@@ -1,0 +1,27 @@
+.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 60px;
+}
+
+.link {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  transition: opacity .3s linear;
+}
+
+.link_active {
+  font-weight: 500;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.linkMainPage {
+  color: #FFF;
+}

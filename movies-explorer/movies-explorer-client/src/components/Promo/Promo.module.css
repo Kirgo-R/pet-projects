@@ -1,0 +1,133 @@
+.wrapper {
+  display: flex;
+  padding: 75px 70px;
+  background: var(--propmo-bg-color);
+  justify-content: space-between;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+  width: calc(640/768*100%);
+  align-items: flex-start;
+}
+
+.title {
+  color: var(--light-font-color);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.caption {
+  color: var(--light-font-color);
+  opacity: .5;
+  font-size: 13px;
+  font-weight: 400;
+  width: 310px;
+  padding: 36px 0 146px;
+}
+
+.button {
+  width: 129px;
+  height: 36px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px var(--additional-color) solid;
+  border-radius: 3px;
+  color: var(--light-font-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+.button:hover {
+  opacity: .8;
+}
+
+.image {
+  width: 310px;
+  height: 304px;
+}
+
+@media (max-width: 860px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .promo {
+    width: calc(680/768*100%);
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .caption {
+    text-align: center;
+  }
+
+  .image {
+    order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 140px 50px 76px;
+    gap: 48px;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: normal;
+
+  }
+
+  .caption {
+    width: 260px;
+    padding: 22px 0 92px;
+  }
+
+  .image {
+    order: -1;
+    width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
+    height: calc(206px + (304 - 206)*((100vw - 320px)/(768 - 320)));
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 70px 10px 30px;
+    gap: 44px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -1.35px;
+    width: 300px;
+  }
+
+  .caption {
+    font-size: 13px;
+    width: 260px;
+    padding: 24px 0 80px;
+  }
+
+  .image {
+    order: -1;
+    width: calc(210px + (310 - 210)*((100vw - 320px)/(768 - 320)));
+    height: calc(206px + (304 - 206)*((100vw - 320px)/(768 - 320)));
+  }
+}
+

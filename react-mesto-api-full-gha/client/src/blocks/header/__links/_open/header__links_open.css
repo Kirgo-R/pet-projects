@@ -1,0 +1,9 @@
+.header__links_open {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header__links_open {
+        border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    }
+}

@@ -1,0 +1,8 @@
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  box-sizing: border-box;
+  padding: 60px 0 40px;
+  font-size: 100%;
+  line-height: normal;
+}

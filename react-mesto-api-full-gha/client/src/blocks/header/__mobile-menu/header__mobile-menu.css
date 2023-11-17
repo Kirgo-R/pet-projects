@@ -1,0 +1,11 @@
+.header__mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header__mobile-menu {
+        padding: 27px 30px 32px;
+    }
+}

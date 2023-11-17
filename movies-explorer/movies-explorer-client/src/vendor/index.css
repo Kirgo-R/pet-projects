@@ -1,0 +1,40 @@
+@import "./fonts/fonts.css";
+@import './variables.css';
+@import-normalize;
+
+body {
+  color: var(--font-color);
+  background: var(--main-bg-color);
+  font-family: var(--main-font);
+  font-weight: normal;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+button, input, fieldset{
+  border: none;
+  background: transparent;
+  outline:none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
